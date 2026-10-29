@@ -654,6 +654,14 @@ footer{background:var(--night);color:rgba(255,255,255,.75);padding:60px 0 120px;
   .np .row,.car-ring,.cars-photo,.topo,.hero-photo img{animation:none}
   .hero h1 .yr{transform:translateY(.2em) rotate(-4deg)}.hero-lede,.hero-ctas,.count-card{opacity:1}
 }
+
+/* brand lockup: contour mark + PRN TRLS wordmark (2027 brand manual) */
+.lockup{display:inline-flex;align-items:center;gap:.55em;font-family:"Archivo",system-ui,sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;line-height:.84;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.lockup img{width:auto;flex:none}
+.lockup b{font-weight:900;display:block}
+.nav .lockup{color:#EEF4EA;transition:color .3s}
+:root[data-theme="light"] .nav.solid .lockup{color:#0B1F1D}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]) .nav.solid .lockup{color:#0B1F1D}}
 </style>
 </head>
 <body>
@@ -661,7 +669,7 @@ footer{background:var(--night);color:rgba(255,255,255,.75);padding:60px 0 120px;
 
 <header class="nav" id="nav">
   <div class="wrap in">
-    <a class="logo" href="#top" aria-label="Prishtina Trails, home"><img src="https://prishtinatrails.com/wp-content/uploads/2025/07/Group-12-1.png" alt="Prishtina Trails" width="97" height="30"></a>
+    <a class="logo" href="#top" aria-label="Prishtina Trails, home"><span class="lockup" style="font-size:17px"><img src="img/prn-trls-mark.png" alt="Prishtina Trails" width="28" height="38" style="height:38px"><b aria-hidden="true">PRN<br>TRLS</b></span></a>
     <nav aria-label="Primary"><ul id="navlinks">
       <li><a href="#races">Races</a></li><li><a href="#course">Course</a></li><li><a href="#runners">Runners</a></li><li><a href="#movement">Movement</a></li><li><a href="#results">Results</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#faq">FAQ</a></li>
     </ul></nav>
@@ -1106,7 +1114,7 @@ footer{background:var(--night);color:rgba(255,255,255,.75);padding:60px 0 120px;
       </div>
       <div class="foot">
         <div class="about">
-          <img src="https://prishtinatrails.com/wp-content/uploads/2025/07/Group-12-1.png" alt="Prishtina Trails" width="117" height="36">
+          <span class="lockup" style="font-size:20px"><img src="img/prn-trls-mark.png" alt="Prishtina Trails" width="34" height="46" style="height:46px"><b aria-hidden="true">PRN<br>TRLS</b></span>
           <p style="margin:0;max-width:34ch">Prishtina Trails is organised by the X Trailers running club. Follow the red-and-white markers: Gërmia’s finest trails.</p>
           <div class="socials">
             <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>

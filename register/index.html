@@ -268,13 +268,19 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media (prefers-reduced-motion: reduce){
   *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
 }
+
+/* brand lockup: contour mark + PRN TRLS wordmark (2027 brand manual) */
+.lockup{display:inline-flex;align-items:center;gap:.55em;font-family:"Archivo",system-ui,sans-serif;font-style:italic;font-weight:900;text-transform:uppercase;line-height:.84;letter-spacing:-.02em;color:var(--ink);white-space:nowrap}
+.lockup img{width:auto;flex:none}
+.lockup b{font-weight:900;display:block}
+.bib .lockup{color:var(--on-fill)}
 </style>
 </head>
 <body>
 
 <header class="bar">
   <div class="wrap in">
-    <a class="logo" href="../" aria-label="Prishtina Trails, back to the site"><img src="https://prishtinatrails.com/wp-content/uploads/2025/07/Group-12-1.png" alt="Prishtina Trails" width="91" height="28"></a>
+    <a class="logo" href="../" aria-label="Prishtina Trails, back to the site"><span class="lockup" style="font-size:15px"><img src="../img/prn-trls-mark.png" alt="Prishtina Trails" width="25" height="34" style="height:34px"><b aria-hidden="true">PRN<br>TRLS</b></span></a>
     <a class="home" href="../">Back to the site</a>
     <button class="ibtn" id="theme" type="button" aria-label="Toggle light and dark theme">
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
@@ -418,7 +424,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
   <aside class="side" aria-label="Your registration">
     <div class="bib" id="bib" role="img" aria-label="Bib preview">
-      <div class="h"><img src="https://prishtinatrails.com/wp-content/uploads/2025/07/Group-12-1.png" alt="" width="65" height="20"><span>9 · 5 · 2027</span></div>
+      <div class="h"><span class="lockup" style="font-size:10px"><img src="../img/prn-trls-mark.png" alt="" width="16" height="22" style="height:22px"><b aria-hidden="true">PRN<br>TRLS</b></span><span>9 · 5 · 2027</span></div>
       <div class="band2"><span id="bRace">50K Ultra</span><span id="bStart">06:00</span></div>
       <div class="no tnum wait" id="bNo">0000</div>
       <div class="who" id="bWho">Your name</div>
